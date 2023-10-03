@@ -18,6 +18,8 @@ public class Algoritmo2{
         System.out.println("5. prisma");
 
         int opcion = input.nextInt();
+        System.out.println("Ud eligio el: "+opcion);
+        
         double volumen = 0;
 
         switch (opcion) {
