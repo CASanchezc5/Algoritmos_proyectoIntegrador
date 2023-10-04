@@ -2,13 +2,9 @@
 
 import java.util.Scanner;
 import java.lang.Math;
-
-public class Algoritmo2{
-    /**
-     * @param args
-     */
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+class Main {
+public static void main(String[] args) {
+       Scanner input = new Scanner(System.in);
 
         System.out.println("selecciona una figura geometrica: ");
         System.out.println("1. cubo");
@@ -16,6 +12,7 @@ public class Algoritmo2{
         System.out.println("3. esfera");
         System.out.println("4. cono");
         System.out.println("5. prisma");
+        System.out.println("6. piramide");
 
         int opcion = input.nextInt();
         System.out.println("Ud eligio el: "+opcion);
@@ -54,6 +51,16 @@ public class Algoritmo2{
                 double alturaPrisma = input.nextDouble();
                 volumen = areaBasePrisma*alturaPrisma;
                 break;
+            case 6:
+                System.out.print("Ingrese la longitud de la base del triángulo: ");
+               double base = input.nextDouble();
+               System.out.print("Ingrese la altura del triángulo: ");
+               double alturaTriangulo = input.nextDouble();
+               System.out.print("Ingrese la altura de la pirámide: ");
+               double alturaPiramide = input.nextDouble();
+               double areaBase = (base * alturaTriangulo) / 2;
+               volumen = (1.0 / 3) * areaBase * alturaPiramide;
+               break;
         
         
             default:
